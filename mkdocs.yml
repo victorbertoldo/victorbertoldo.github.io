@@ -1,5 +1,5 @@
 site_name: Victor Bertoldo
-
+repo_url: https://victorbertoldo.github.io/
 theme:
   name: material
   palette:
