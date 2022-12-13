@@ -1,0 +1,38 @@
+site_name: Victor Bertoldo
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep orange
+      toggle:
+        icon: material/brightness-7 
+        name: Modo noturno
+
+    - scheme: default
+      primary: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  logo: assets/logo_sem_fundo.png
+  favicon: assets/images/dice.png
+
+plugins:
+  - blog
+
+markdown_extensions:
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+
+extra_css:
+  - https://unpkg.com/mermaid@8.5.1/dist/mermaid.css
+extra_javascript:
+  - https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js
